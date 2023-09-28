@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Clientes</title>
+   
+    <style>
+  
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(img/fondo.png);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="nombre"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Color de fondo del menú */
+    text-align: center;
+}
+
+ul.menu li {
+    display: inline-block;
+    position: relative;
+    margin-right: 20px; /* Espacio entre los elementos del menú */
+}
+
+ul.menu li a {
+    text-decoration: none;
+    color: #fff; /* Color de texto del menú */
+    font-weight: bold;
+    padding: 10px 20px;
+    display: block;
+}
+
+ul.submenu {
+    display: none;
+    position: absolute;
+    background-color: #000000; /* Color de fondo del submenu */
+    min-width: 150px;
+    text-align: left;
+}
+
+ul.submenu li {
+    display: block;
+}
+
+ul.menu li:hover ul.submenu {
+    display: block;
+}
+
+ul.menu li a:hover {
+    color: rgb(255, 0, 0); /* Color de texto al pasar el cursor por encima */
+}
+
+    </style>
+</head>
+<body>
+  
+  <ul class="menu">
+      <li><a href="tablaClientes.html">Tabla php</a></li>
+  </ul>
+</head>
+<body>
+  <br>
+  <br>
+    <div class="container">
+        <h2>Formulario de Clientes</h2>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="nombre">id cliente:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+              <label for="nombre">Apellido:</label>
+              <input type="text" id="nombre" name="nombre" required>
+          </div>
+          <div class="form-group">
+            <label for="nombre">direccion:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="nombre">ciudad:</label>
+          <input type="text" id="nombre" name="nombre" required>
+      </div>
+      <div class="form-group">
+        <label for="nombre">Estado:</label>
+        <input type="text" id="nombre" name="nombre" required>
+    </div>
+    <div class="form-group">
+      <label for="nombre">cp:</label>
+      <input type="text" id="nombre" name="nombre" required>
+  </div>
+            <div class="form-group">
+                <label for="nombre">Correo Electrónico:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <input type="button" value="Enviar datos">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
